@@ -46,7 +46,7 @@ Get-Content C:\Windows\system32\drivers\etc\hosts
 Log("##########################")
 Log("# Downloading Source Code Apps")
 Log("##########################")
-Invoke-WebRequest -Uri "https://edisga.file.core.windows.net/oss-interviews/oss-labs.zip?sv=2020-08-04&ss=f&srt=co&sp=rl&se=2022-12-09T08:22:43Z&st=2021-12-09T00:22:43Z&sip=0.0.0.0-255.255.255.255&spr=https&sig=xTu9JI6MaCzFfqNu%2BXQ%2Fejov4J1g5dz%2BLbIPwiDWqmI%3D" -OutFile ($Downloaddir+"\oss-labs.zip")
+Invoke-WebRequest -Uri "https://github.com/edisga/test1/raw/master/oss-labs.zip" -OutFile ($Downloaddir+"\oss-labs.zip")
 Log("Extracting source Code Files")
 Expand-Archive -Path ($Downloaddir+"\oss-labs.zip") -DestinationPath $Downloaddir
 Log("Cleaning...")
